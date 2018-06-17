@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Success</title>
+    <style>
+        .left{
+            width: 40%;
+            float: left;
+            position: relative;
+            top: 70px;
+        }
+        .right{
+            width: 50%;
+            float: left;
+            position: relative;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class='left'>
+        {%  for each in object_list %}
+            {% if each.image %}
+            <img src='{{ each.image.url }}' height="500px" width="370px"> <br />
+            <p style="display: none;">{{ each.image.url }}</p>
+        </div>
+        <div class='right'>
+            <h2>response</h2>
+            <p width="50%">{{ restext }}</p>
+            {% endif %}
+        {% endfor %}
+        <h3>click <a href='/'>here </a>to go for HOME</h3>
+        </div>
+    </center>
+</body>
+</html> 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to OCR Web application</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to OCR Web Application</h1>
+        <form method="POST" action="" enctype="multipart/form-data">{% csrf_token %}
+            {{ form.as_p }}
+        <input type="submit" value="SUBMIT" />
+        </form>
+            <h3>Click <a href='response/'>here </a>to show again the result</h3>
+    </center>
+</body>
+</html>
